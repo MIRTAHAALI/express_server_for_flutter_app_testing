@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "forever --minUptime 5000 --spinSleepTime 3000 start server.js",
-    "server": "node server"
+    "server": "pm2 start server.js --watch"
   },
   "author": "",
   "license": "ISC",
