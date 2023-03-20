@@ -22,7 +22,7 @@ pipeline{
         
         stage('Deploy'){
             steps {
-                bat 'pm2 start server.js'
+                bat 'pm2 startOrRestart pm2.config.json'
             }
         }
     }
